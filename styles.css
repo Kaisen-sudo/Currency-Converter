@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(22, 180, 231, 1);
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-color: #FFFFFF;
+    padding: 2rem;
+    border-radius: 1rem;
+    min-height: 45vh;
+    width: 40vh;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp 0.5s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+form {
+    margin: 2rem 0 1rem 0;
+}
+
+form select,
+button,
+input {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 0.75rem;
+}
+
+form input {
+    border: 1px solid lightgray;
+    font-size: 1rem;
+    height: 3rem;
+    padding-left: 0.5rem;
+}
+
+.dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.dropdown i {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.dropdown i:hover {
+    transform: rotate(180deg);
+}
+
+.select-container img {
+    max-width: 2rem;
+    margin-right: 0.5rem;
+}
+
+.select-container select {
+    background-color: #FFFFFF;
+    font-size: 1rem;
+    width: auto;
+    cursor: pointer;
+}
+
+.select-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    border-radius: 0.5rem;
+    border: 1px solid lightgray;
+    padding: 0.2rem;
+}
+
+.msg {
+    margin: 2rem 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+form button {
+    height: 3rem;
+    background-color: #000000;
+    color: #fff;
+    font-size: 1.15rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+form button:hover {
+    background-color: #333333;
+    animation: none;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    color: #000000;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
